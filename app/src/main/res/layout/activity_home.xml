@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:animateLayoutChanges="true"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:text="Welcome!"
+        android:layout_below="@+id/successMsg"
+        android:id="@+id/welcome"
+        android:textColor="#393939"
+        android:textSize="24sp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginStart="8dp"
+        android:paddingTop="8dp"
+        android:textColor="#4ba2f2"
+        android:layout_toEndOf="@+id/userImage"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/welcome"
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@+id/welcome"
+        android:id="@+id/userImage"
+        android:layout_width="108dp"
+        android:layout_height="108dp" />
+
+    <TextView
+        android:textColor="#1b1b1b"
+        android:layout_below="@+id/username"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/userImage"
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/fullname"
+        android:layout_toEndOf="@+id/userImage"
+        android:id="@+id/about"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/sbd"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/about"
+        android:layout_toEndOf="@+id/userImage"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/successMsg"
+        android:layout_centerHorizontal="true"
+        android:text="Signed In Successfully using SteemConnect!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/username"
+        android:layout_toEndOf="@id/userImage"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
